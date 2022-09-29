@@ -1,5 +1,10 @@
 package Students;
 
+
+import jdk.jfr.DataAmount;
+import lombok.Data;
+
+@Data
 public class Student {
 
     //declarations
@@ -22,45 +27,4 @@ public class Student {
     }
 
 
-    //Methods
-
-    @Override
-    public String toString(){
-
-        return name + "\n" + age + "\n" + subject + "\n"+ isPresent+ "\n";
-    }
-
-    //getter and setter - methods
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getSubject() {
-        return subject;
-    }
-
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
-
-    public boolean isPresent() {
-        return isPresent;
-    }
-
-    public void setPresent(boolean present) {
-        isPresent = present;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
